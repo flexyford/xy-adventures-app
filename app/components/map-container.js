@@ -56,7 +56,9 @@ export default Ember.Component.extend({
           });
       });
 
-      var featureLayer = L.mapbox.featureLayer(geojson).addTo(map);
+      var clusterGroup = new L.MarkerClusterGroup();
+      var featureLayer = L.mapbox.featureLayer(geojson)
+
       featureLayer.eachLayer(function(layer) {
         // here you call `bindPopup` with a string of HTML you create - the feature
         // properties declared above are available under `layer.feature.properties`
@@ -67,7 +69,9 @@ export default Ember.Component.extend({
           '<img src="' + layer.feature.properties.image + '" />' +  
         '</a>'
         layer.bindPopup(content);
+        clusterGroup.addLayer(layer);
       });
+      map.addLayer(clusterGroup);
 
       this.removeLayer();
       this.set('layer', featureLayer);

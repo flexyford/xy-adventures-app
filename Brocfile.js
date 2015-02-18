@@ -24,6 +24,9 @@ app.import('bower_components/mapbox.js/mapbox.js', {
 
 app.import("bower_components/mapbox.js/mapbox.css");
 
+app.import("bower_components/leaflet.markercluster/dist/leaflet.markercluster.js");
+app.import("bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css");
+
 var extraAssets = pickFiles('bower_components/mapbox.js/images', {
   srcDir: '/',
   files: ['icons-*', 'layers-*', 'marker-*'],
