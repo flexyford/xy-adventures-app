@@ -1,0 +1,27 @@
+{{#fixed-nav-bar}}
+  <div class="logo-section"> 
+
+    {{#link-to "index"}}
+      <img src="assets/images/xy_nav_clear_x_bike_power_blue.png" 
+      class="logo-image"></img>
+    {{/link-to}}
+
+  </div>
+{{/fixed-nav-bar}}
+<!-- Display Map -->
+<div class="row" id="map-canvas">
+  <!-- Display Top Horizantal Map Filters -->
+  <!-- | compAct = "CtrlAct" compAttr = CtrlAttr | -->
+  <div class="large-1 columns">
+    <!-- Display Left Vertical Map Filters -->
+    {{map-filter-left categories=categories}}
+  </div>
+  <div class="large-10 columns">
+    <!-- Display Map -->
+    {{map-container mySites=filteredSites waypoints=route range=range search="search"}}
+  </div>
+  <div class="large-1 columns">
+    <!-- Display Right Vertical Map Filters -->
+    {{map-filter-right}}
+  </div>
+</div>

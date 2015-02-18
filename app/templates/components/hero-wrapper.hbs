@@ -1,0 +1,27 @@
+<!--hero section-->
+<div id="hero-image">
+  <div class="words">
+   
+    <h1 {{bind-attr class=":hero-title"}}> 
+     X Y Adventures </h1>
+    <img {{bind-attr src=heroUrl class=":hero-logo"}}/>
+    <h3 {{bind-attr class=":hero-text"}}> 
+     Bike Some. Hike Some. Calc Sum. </h3>
+ </div>
+
+<div {{bind-attr class=":hero-buttons"}}>
+  {{#each button in heroButtons}}
+    {{#if button.anchor-to}}
+      {{#anchor-link customHref=button.anchor-to class=button.class id=button.attrId}}
+        {{button.content}}
+      {{/anchor-link}}
+    {{else}}
+      {{#link-to button.link-to class=button.class id=button.attrId}}
+        {{button.content}}
+      {{/link-to}}
+    {{/if}}
+  {{/each}}
+ </div>
+</div>
+
+  

@@ -1,0 +1,14 @@
+<!-- about section-->
+<div class="row">
+  <div class="large-1 columns slide-prev ">
+    <img src="assets/images/left209.png" alt="slide prev" {{action "left"}} />
+  </div>
+  <div class="large-10 columns text-center banner">
+    <img {{bind-attr src="tile.img"}}/>
+    <p class="ceil-text header">{{tile.title}}</p>
+    <p>{{tile.text}}</p>
+  </div>
+  <div class="large-1 columns slide-next ">
+    <img src="assets/images/right230.png" alt="slide next" {{action "right"}} />
+  </div>
+</div>

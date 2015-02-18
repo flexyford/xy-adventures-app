@@ -1,0 +1,13 @@
+<!-- about section-->
+<div class="row">
+  {{#each tile in aboutTiles}}
+   
+    <div {{bind-attr class=":large-4 :columns :text-center"}} >
+      <p {{bind-attr class=":ceil-text"}}>
+        {{tile.text}}
+      </p>
+     <img {{bind-attr src="tile.img"}} {{bindAttr id="tile.attrId"}} />
+    
+    </div>
+  {{/each}}
+</div>
