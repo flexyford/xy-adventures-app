@@ -1,7 +1,7 @@
   <!-- filter and search -->
   <div class="filter-row">
-    <div class="float-left" id="search-origin">{{input value=start class="search" placeholder="Start Location"}}</div>
-    <div class="float-left" id="search-destination">{{input value=end class="search" placeholder="End Location"}}</div>
+    {{input value=start class="search float-left" id="search-origin" placeholder="Start Location"}}
+    {{input value=end class="search float-left" id="search-destination" placeholder="End Location"}}
     <button class="button small float-left" id="submit-button" type="submit" {{action 'buildQuery'}}>Search</button>
   </div>
 

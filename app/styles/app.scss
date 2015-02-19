@@ -33,16 +33,14 @@
 
 .fixed-nav-bar {
   position: fixed;
-  z-index: 9999;
-  width: 100%;
-  height: 63px;
+  z-index: 1;
   background-color: transparent;
 }
 
 
 .logo-image {
-  height: 75px;
-  /* width: 135px; */
+  height: 78px;
+  width: 121px;
   float: left;
   display: inline-block;
   margin-left: -20px;
@@ -409,13 +407,10 @@
 
 /* MAP SECTION */
 
-.map-canvas {
-  margin-top: -20px;
-}
-
 .filter-row {
   overflow:hidden; /*make sure the wrapper has no dimension*/
   background:lightgrey;
+  margin-top: -20px;
   margin-bottom:-15px;
   height: 68px;
 }
