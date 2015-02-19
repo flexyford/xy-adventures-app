@@ -12,8 +12,8 @@ export default Ember.Component.extend({
 
   tutorialTiles:[ {
     "id": 1,
-    "title": "XY-Adventures is Built On an Airbnb Web Scraper",
-    "text": "",
+    "title": "How To Scrape Airbnb!",
+    "text": "XY-Adventures is Built On an Airbnb Web Scraper",
     "img": 'assets/images/airbnbmap.jpg'
   }, {
     "id": 2,
@@ -33,7 +33,7 @@ export default Ember.Component.extend({
   }, {
     "id": 5,
     "title": "Search Techniques - Part 3 - Limits",
-    "text": "Airbnb sets limits on the amount of locations they share in a queried area: 18 Locations per page, Maximum of 56 Pages",
+    "text": "Airbnb sets limits on the amount of locations they share in a queried area.\n1000+ Rentals means we need to query a smaller area",
     "img": 'assets/images/Slide_C1_Large.png'
   }, {
     "id": 6,
