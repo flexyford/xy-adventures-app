@@ -13,7 +13,7 @@ export default Ember.Component.extend({
   tutorialTiles:[ {
     "id": 1,
     "title": "XY-Adventures is Built On an Airbnb Web Scraper",
-    "text": "Vero migas biodiesel aliqua, meditation authentic Intelligentsia. Enim consequat photo booth crucifix flannel, umami yr sapiente reprehenderit readymade chia selvage officia. Bitters actually enim, kogi blog eiusmod et shabby chic excepteur forage pour-over mollit PBR&B nesciunt. Post-ironic nostrud Godard pug mollit, slow-carb semiotics brunch scenester minim pariatur nulla et master cleanse. Selvage migas bitters yr, put a bird on it consectetur direct trade assumenda trust fund. Flannel laborum 90's, scenester Pinterest sed cornhole pug. Adipisicing cornhole nostrud Truffaut cupidatat selfies.",
+    "text": "",
     "img": 'assets/images/airbnbmap.jpg'
   }, {
     "id": 2,
