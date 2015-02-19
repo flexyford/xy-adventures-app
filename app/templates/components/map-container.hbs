@@ -1,37 +1,11 @@
-<!-- filter and search -->
-<div class="row">
+  <!-- filter and search -->
   <div class="filter-row">
-    <div {{bind-attr class=":large-1 :columns"}} ></div>
-    <div {{bind-attr class=":large-8 :columns" }}>
-      <div class="panel" id="search-panel">
-        <li class="has-form" id="search-row">
-          <div class="row collapse">
-            <div {{bind-attr class=":large-4 :small-3 :columns"}}>
-              {{input value=start class="search" placeholder="Start Location"}}
-            </div>
-            <div {{bind-attr class=":large-4 :small-3 :columns"}}>
-              {{input value=end class="search" placeholder="End Location"}}
-            </div>
-            <div {{bind-attr class=":large-4 :small-3 :columns"}}>
-              <button class="button small" id="submit-button" type="submit" {{action 'buildQuery'}}>Search</button>
-            </div>
-          </div>
-        </li>
-      </div>
-    </div>
-    <div {{bind-attr class=":large-3 :columns"}}>
-      <div class="panel" id="switch-panel">
-        <div class="switch" id="numero1">
-          {{input checked=isPopularToggled id="exampleCheckboxSwitch" type="checkbox"}}
-          <label for="exampleCheckboxSwitch"></label>
-          <p class="switch-text" id="switch-text2">  Popular Events </p>
-        </div>
-      </div>
-    </div>
+    <div class="float-left" id="search-origin">{{input value=start class="search" placeholder="Start Location"}}</div>
+    <div class="float-left" id="search-destination">{{input value=end class="search" placeholder="End Location"}}</div>
+    <button class="button small float-left" id="submit-button" type="submit" {{action 'buildQuery'}}>Search</button>
   </div>
-</div>
 
-<!-- mapbox -->
-<div id="map"></div>
+  <!-- mapbox -->
+  <div id="map"></div>
 
-{{yield}}
+  {{yield}}

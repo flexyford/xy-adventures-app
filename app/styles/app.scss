@@ -41,7 +41,7 @@
 
 
 .logo-image {
-  height: 94px;
+  height: 75px;
   /* width: 135px; */
   float: left;
   display: inline-block;
@@ -399,15 +399,55 @@
  margin-right: -53px;
 }
 
-.filter-row {
-  width: 100%;
-  background-color: $accentColor;
-  height: 80px;
-}
-
 .panel {
   background-color: $accentColor;
   border: none;
+}
+
+
+
+
+/* MAP SECTION */
+
+.map-canvas {
+  margin-top: -20px;
+}
+
+.filter-row {
+  overflow:hidden; /*make sure the wrapper has no dimension*/
+  background:lightgrey;
+  margin-bottom:-15px;
+  height: 68px;
+}
+
+#map {
+  width: 100%;
+  height: 820px;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+
+.filter-left {
+  margin-left: -30px;
+  margin-top: -20px;
+}
+
+.float-left {
+  float:left; 
+  height:100px;
+  background:transparent;
+  margin:10px;
+}
+
+#search-origin {
+  margin-left: 150px;
+  margin-top: 25px;
+  width: 250px;
+}
+
+#search-destination {
+  margin-top: 25px;
+  width: 250px;
 }
 
 #submit-button {
@@ -416,28 +456,8 @@
   color: #727272;
   font-weight: 600;
   height: 37px;
+  margin-top: 25px;
 }
-
-
-/* MAP SECTION */
-
-#map-canvas {
-  margin-bottom: 150px;
-  margin-top: -20px;
-}
-
-#map {
- width: 949px; 
- height: 500px;
- margin-left: -32px;
- margin-top: -20px;
-}
-
-.filter-left {
-  margin-left: -30px;
-  margin-top: -20px;
-}
-
 
 .icon-bar.large-vertical.four-up {
   background-color: $accentColor;
