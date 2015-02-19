@@ -3,6 +3,12 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+This README is currently the default README. More information to come. For now, please visit the site and checkout the Airbnb Scraper API as well. (Yes, the API currently has the default README as well. Updates coming soon!)
+
+* [XY Adventures](http://flexyford.github.io/xy-adventures-app/)
+* [API](https://github.com/flexyford/xy-adventures-api)
+
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
